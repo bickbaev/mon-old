@@ -1,0 +1,253 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {height: 100%}
+body {
+	font: 12px/18px Arial, Tahoma, Verdana, sans-serif;
+	height: 100%;
+}
+a {
+	color: blue;
+	outline: none;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+p {margin: 0 0 18px}
+img {
+	border: none;
+}
+input {vertical-align: middle}
+#wrapper {
+	width: 100%;
+	min-width: 1000px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+	height: 101px;
+	background: url(../images/logo_bg.jpg) left top repeat-x;
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#content {
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+	margin: -20px auto 0;
+	min-width: 1000px;
+	height: 20px;
+	background: #E0D8BA;
+	text-align:center;
+}
+#logo {
+    float: left;
+}
+#auth {
+    float: right;
+    margin-right: 30px;
+    margin-top: 5px;
+}
+
+#auth_login {
+    float: right;
+    margin-right: 30px;
+    margin-top:13px;
+    text-align: right;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
+    line-height: 130%;
+}
+
+#mainmenu
+{
+	background:white url(bg.png) repeat-x left top;
+        text-align: center;
+}
+
+#mainmenu ul
+{
+	/*padding:6px 20px 5px 20px;*/
+        padding: 0 0 5px 0;
+        margin:0px;
+}
+
+#mainmenu ul li
+{
+	display: inline;
+}
+
+#mainmenu ul li a
+{
+	color:#0033CC;
+	background-color:transparent;
+	font-size:13px;
+	font-weight:bold;
+	text-decoration:none;
+	padding:5px 8px;
+}
+
+#mainmenu ul li a:hover
+{
+	text-decoration: underline;
+}
+#mainmenu ul li.active a {
+        color: #CC3333;
+	text-decoration:none;
+}
+#est_name {
+font-size: 130%;
+font-weight: bold;
+margin:20px 0 20px 20px;
+}
+.otchet_tree {
+min-height:30px;
+width:740px;
+background-image: url("../images/line.jpg");
+background-position: 0 4px;
+background-repeat: repeat-x;
+font-weight: bold;
+font-size: 100%;
+margin:20px 0 20px 20px;
+}
+.otchet_tree table {
+margin: 20px 0;
+text-align: center;
+}
+.otchet_tree table tr{
+font-weight: normal;
+}
+.otchet_tree table img {
+    position:relative;
+    top: 3px;
+    right: 3px;
+    margin-left: 9px;
+}
+.otchet {
+min-height:30px;
+width:650px;
+background-image: url("../images/line.jpg");
+background-position: 0 4px;
+background-repeat: repeat-x;
+font-weight: bold;
+font-size: 100%;
+margin:20px 0 20px 20px;
+}
+.otchet table {
+margin: 20px 0;
+text-align: center;
+}
+.otchet table tr{
+font-weight: normal;
+}
+.otchet table img {
+    position:relative;
+    top: 3px;
+    right: 3px;
+    margin-left: 9px;
+}
+#est_tree {
+margin: 20px 20px;
+width:750px;
+}
+
+.stroka:hover {
+    background-color: #E5DEC1; /*#C4E4F8#DEF2E5;*/
+    color: black;
+}
+
+.breadcrumbs {
+    padding: 5px 15px;
+}
+
+.head {
+    background-color: #F8F2E2;
+    text-align: center;
+    font-weight: bold;
+}
+.userinfo {
+    min-height:30px;
+    width:650px;
+    background-image: url("../images/line.jpg");
+    background-position: 0 4px;
+    background-repeat: repeat-x;
+    font-weight: bold;
+    font-size: 100%;
+    margin:40px 20px;
+}
+.userinfo .head {
+    font-weight: bold;
+}
+.userinfo table {
+    margin: 20px 0;
+    text-align: center;
+}
+.userinfo table tr{
+    font-weight: normal;
+}
+.userinfo table img {
+    position:relative;
+    top: 3px;
+    right: 3px;
+    margin-left: 9px;
+}
+.otchet_edit {
+    min-height:30px;
+    width:750px;
+    background-image: url("../images/line.jpg");
+    background-position: 0 4px;
+    background-repeat: repeat-x;
+    font-weight: bold;
+    font-size: 100%;
+    margin:40px 20px;
+}
+.otchet_edit_table .head {
+    font-weight: bold;
+}
+.otchet_edit_table {
+    margin: 0px 20px;
+    text-align: left;
+}
+.otchet_edit_table tr label{
+    font-weight: normal;
+    margin-left: 5px;
+}
+    
+.otchet_edit_table td{
+    padding: 0 3px;
+}    
+
+
+.otchet_edit_table tr img {
+    position:relative;
+    top: 3px;
+    right: 3px;
+    margin-left: 9px;
+}
+.otchet_button {
+    margin: 20px 10px 0 20px;
+}
+.otchet_isp {
+    margin-left: 20px;
+}
+.otchet_isp img {
+    position:relative;
+    top: 3px;
+    right: 3px;
+    margin-left: 9px;
+}

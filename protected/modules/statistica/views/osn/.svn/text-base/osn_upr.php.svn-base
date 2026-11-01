@@ -1,0 +1,20 @@
+<?php
+$this->pageTitle=Yii::app()->name . ' - Оснащенность.'.$okrug;
+?>
+<div class = "otchet_edit">Оснащенность - <?php echo $okrug; ?></div>
+<table  width="600" border="1" cellspacing="0" cellpadding="3" class ="otchet_edit_table" >
+    <tr class="head">
+        <th width="550">Учреждение</th>
+        <th>Количество баллов</th>
+    </tr>
+    <?php
+    for($i = 0; $i < sizeof($raion); $i++) {
+        echo '<tr class="head"><th colspan="2">'.$raion[$i]['est_name'].'</th></tr>';
+        for($k = 0; $k < sizeof($raion[$i]['reports']); $k++) {
+            if($raion[$i]['reports'][$k]['sum'] > 24) echo '<tr style = "background: #77FF38;">';
+            else echo '<tr>';
+            echo '<th  style="text-align: left;">'.CHtml::link($raion[$i]['reports'][$k]['est_name'], 'index.php?r=statistica/osn/osn_uch&id_est='.$raion[$i]['reports'][$k]['id_est'].'&id_report='.$raion[$i]['reports'][$k]['id_report']).'</th><th style="text-align: center;">'.$raion[$i]['reports'][$k]['sum'].'</th></tr>';
+        }
+    }
+    ?>
+</table>

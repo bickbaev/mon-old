@@ -1,0 +1,77 @@
+10
+
+dir
+4
+http://mon.cposo.ru/svn/trunk/protected/modules/statistica
+http://mon.cposo.ru/svn
+
+
+
+2010-11-03T13:34:44.741048Z
+4
+admin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+b510967d-bf1e-455d-bed6-c81ff7e89ad8
+
+models
+dir
+
+StatisticaModule.php
+file
+
+
+
+
+2010-11-05T10:31:49.062500Z
+cc026288ecb20f7ddaa17009afc3b356
+2010-11-01T13:01:31.301640Z
+3
+admin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+676
+
+components
+dir
+
+controllers
+dir
+
+messages
+dir
+
+views
+dir
+

@@ -1,0 +1,2 @@
+<legend>Добавление индустриального эксперта, главного эксперта, технического администратора площадки или волонтера</legend>
+<?php echo $this->renderPartial('_form2', array('model'=>$model, 'school'=>$school, 'id_comp'=>$id_comp, 'act'=>1)); ?>

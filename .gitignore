@@ -1,0 +1,17 @@
+assets/*
+!assets/.gitkeep
+images/*
+!images/.gitkeep
+res/
+protected/pred/
+protected/spz/
+protected/vendors/
+protected/vendor/
+protected/runtime/*
+!protected/runtime/.gitkeep
+protected/extensions/*
+!protected/extensions/.gitkeep 
+protected/res/
+protected/building18/
+protected/config/*
+!protected/config/.gitkeep 

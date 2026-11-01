@@ -1,0 +1,39 @@
+<?php
+$this->pageTitle=Yii::app()->name . ' - Оснащенность';
+?>
+<div class = "otchet_edit">Оснащенность - <?php echo $otchet['rep_name'].' период '.$otchet['s_date'].'-'.$otchet['f_date']; ?></div>
+<table  width="750" border="1" cellspacing="0" cellpadding="3" class ="otchet_edit_table" >
+    <tr class="head">
+        <th width="200">Управление</th>
+        <th>Количество современных школ (25 и более баллов)</th>
+        <th>Кол-во школ, набравших 24 балла</th>
+        <th>Кол-во школ, набравших 23 балла</th>
+        <th>Кол-во школ, набравших 22 балла</th>
+    </tr>
+    <?php
+    for($i = 0; $i < sizeof($okrug); $i++) {
+        echo '<tr>';
+        if($okrug[$i]['kol']) {
+            $sov_p = ' ('.number_format($okrug[$i]['sovr']*100/$okrug[$i]['kol'], 2).'%)';
+            $sov1_p = ' ('.number_format($okrug[$i]['sovr_1']*100/$okrug[$i]['kol'], 2).'%)';
+            $sov2_p = ' ('.number_format($okrug[$i]['sovr_2']*100/$okrug[$i]['kol'], 2).'%)';
+            $sov3_p = ' ('.number_format($okrug[$i]['sovr_3']*100/$okrug[$i]['kol'], 2).'%)';
+        }
+        else {
+            $sov_p = '';
+            $sov1_p = '';
+            $sov2_p = '';
+            $sov3_p = '';
+        }
+        echo '<th style = "text-align: left; text-indent: 7px;">'.CHtml::link($okrug[$i]['est_name'], 'index.php?r=statistica/osn/osn_upr&id_okr='.$okrug[$i]['id_est'].'&id_rep_type='.$id_rep_type).'</th><th style="text-align: center;">'.$okrug[$i]['sovr'].$sov_p.'</th><th style="text-align: center;">'.$okrug[$i]['sovr_1'].$sov1_p.'</th><th style="text-align: center;">'.$okrug[$i]['sovr_2'].$sov2_p.'</th><th style="text-align: center;">'.$okrug[$i]['sovr_3'].$sov3_p.'</th>';
+        echo '</tr>';
+    }
+    if($oblast['kol']) {
+    $sov_p = ' ('.number_format($oblast['sovr']*100/$oblast['kol'], 2).'%)';
+    $sov1_p = ' ('.number_format($oblast['sovr_1']*100/$oblast['kol'], 2).'%)';
+    $sov2_p = ' ('.number_format($oblast['sovr_2']*100/$oblast['kol'], 2).'%)';
+    $sov3_p = ' ('.number_format($oblast['sovr_3']*100/$oblast['kol'], 2).'%)';
+    }
+    echo '<tr class="head"><th style = "text-align: left; text-indent: 7px;">Область</th><th style="text-align: center;">'.$oblast['sovr'].$sov_p.'</th><th style="text-align: center;">'.$oblast['sovr_1'].$sov1_p.'</th><th style="text-align: center;">'.$oblast['sovr_2'].$sov2_p.'</th><th style="text-align: center;">'.$oblast['sovr_3'].$sov3_p.'</th></tr>';
+    ?>
+</table>

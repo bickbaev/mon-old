@@ -1,0 +1,40 @@
+<?php
+
+class Contact_infoController extends Controller
+{
+	/**
+	 * Declares class-based actions.
+	 */
+	public function actions()
+	{
+
+	}
+
+        public function filters()
+        {
+            return array(
+                'accessControl + index'
+            );
+        }
+
+        function filterAccessControl($filterChain)
+        {
+            if (Yii::app()->user->isGuest)
+                    $this->redirect('index.php?r=site/login');
+            else
+                    $filterChain->run();
+        }
+
+	/**
+	 * This is the default 'index' action that is invoked
+	 * when an action is not explicitly requested by users.
+	 */
+	public function actionIndex()
+	{
+          if (isset($_GET['id_rep_type']) && $_GET['id_rep_type'] != '') {
+                $id_rep_type = (int) $_GET['id_rep_type'];
+          }
+          else $this->redirect(Yii::app()->user->returnUrl);
+        }
+
+}
